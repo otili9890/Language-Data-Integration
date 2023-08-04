@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgray;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	padding: 2em;
+}
+
+#records {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.record {
+	display: block;
+	width: 100%;
+	padding: 2em;
+	background-color: white;
+	box-shadow: rgba(0,0,0,0.25) 0 5px 5px;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	position: relative;
+}
+
+.record.record-template {
+	display: none;
+}
+
+.record .record-content {
+	display: block;
+	align-items: flex-start;
+}
+
+.record .year {
+	font-size: 0.9em;
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 1em;
+	color: gray;
+}
+
+.record img {
+	max-width: 150px;
+	max-height: 150px;
+	margin-top: 1em;
+}
+
+.record .description {
+	padding-left: 1.5em;
+}
+
+@media only screen and (min-width: 750px) {
+	.record {
+		width: 49%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.record {
+		width: 32%;
+	}
+}
